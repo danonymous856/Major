@@ -1,7 +1,9 @@
 # My first major project
+from .game import game
 
 class Player(object):
     def __init__(self,name,ipp):
+        self.game = None
         self.ipp=ipp
         self.name=name
         self.score=0
