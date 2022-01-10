@@ -1,5 +1,6 @@
 import pygame
-from button import Button,textButton
+from client.button import Button
+
 
 class BottomBar:
     COLORS = {
