@@ -36,6 +36,20 @@ class Network:
                         break
                 except:
                     pass
+            try:
+                if d[-1] == ".":
+                    d = d[:-1]
+            except:
+                pass
+
+            keys = [key for key in data.keys()]
+            return json.loads(d)[str(keys[0])]
+        except socket.error as e:
+            self.disconnect(e)
+
+    def disconnect(self,msg):
+        print("[EXCEPTION] Disconnected from SERVER :",msg)
+        self.client.close()
 
 
 
