@@ -32,7 +32,7 @@ class Network:
                 last = self.client.recv(1024).decode()
                 d += last
                 try:
-                    if d.count(".") == 1
+                    if d.count(".") == 1:
                         break
                 except:
                     pass
