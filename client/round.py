@@ -8,7 +8,7 @@ from _thread import *
 from .chat import Chat
 
 class Round(object):
-    def __init__(self,word,player_drawing,player):
+    def __init__(self,word,player_drawing,player,game):
         """
         init object
         :param word:word
