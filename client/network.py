@@ -23,4 +23,20 @@ class Network:
         except Exception as e:
             self.disconnect(e)
 
+    def send(self,data):
+        try:
+            self.client.recv(json.dumps(data).encode())
+
+            d=""
+            while 1:
+                last = self.client.recv(1024).decode()
+                d += last
+                try:
+                    if d.count(".") == 1
+                        break
+                except:
+                    pass
+
+
+
 
