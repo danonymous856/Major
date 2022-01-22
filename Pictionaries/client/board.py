@@ -29,3 +29,10 @@ def __init__(self,x,y):
     self.board = self.create_board()
     self.BORDER_THICKNESS = 5
 
+def create_board(self):
+    return [[(255,255,255) for _ in range(self.COLS)] for _ in range(self.ROWS)]
+
+def translate_board(self):
+    for y, _ in enumerate(self.compressed):
+        for x, col in enumerate(self.compressed_board[y]):
+
