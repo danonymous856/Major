@@ -21,4 +21,15 @@ class BottomBar:
         self.HEIGHT = 100
         self.BORDER_THICKNESS = 5
         self.game = game
-        self.clear_button = TextButton(self.x + self.y)
+        self.clear_button = TextButton(self.x + self.WIDTH - 150,self.y + 25,100,50, (128,128,128),"Clear")
+        self.clear_button = TextButton(self.x + self.WIDTH - 300, self.y + 25, 100, 50, (128, 128, 128),"Eraser")
+        self.color_buttons = [Button(self.x + 20,self.y + 5,30,30, self.COLORS[0]),
+                              Button(self.x + 50, self.y + 5, 30, 30, self.COLORS[1]),
+                              Button(self.x + 80, self.y + 5, 30, 30, self.COLORS[2]),
+                              Button(self.x + 20, self.y + 35, 30, 30, self.COLORS[3]),
+                              Button(self.x + 50, self.y + 35, 30, 30, self.COLORS[4]),
+                              Button(self.x + 80, self.y + 35, 30, 30, self.COLORS[5]),
+                              Button(self.x + 20, self.y + 65, 30, 30, self.COLORS[6]),
+                              Button(self.x + 50, self.y + 65, 30, 30, self.COLORS[7]),
+                              Button(self.x + 80, self.y + 65, 30, 30, self.COLORS[8])
+                              ]
