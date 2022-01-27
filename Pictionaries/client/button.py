@@ -24,3 +24,8 @@ class Button:
         :param y: float
         :return: bool
         """
+
+        if self.x <= x <= self.x + self.width and self.y <= y <= self.y + self.height:
+            return True  # user clicked button
+
+        return False
