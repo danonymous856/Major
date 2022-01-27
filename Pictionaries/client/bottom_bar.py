@@ -56,6 +56,11 @@ class BottomBar:
         if self.eraser_button.click(*mouse):
             self.game.draw_color = (255,255,255)
 
+        for btn in self.color_buttons:
+            if btn.click(*mouse):
+                self.game.draw_color = btn.color
+
+
 
 
 
