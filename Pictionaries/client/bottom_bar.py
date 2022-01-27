@@ -39,3 +39,15 @@ class BottomBar:
         self.clear_button.draw(win)
         self.eraser_button.draw(win)
 
+        for btn in self.color_buttons:
+            btn.draw(win)
+
+    def button_events(self):
+        """
+        handle all the button press events here
+        :return: None
+        """
+
+
+
+
