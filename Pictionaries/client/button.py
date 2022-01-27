@@ -16,3 +16,11 @@ class Button:
         pygame.draw.rect(win, self.color, (
             self.x + self.BORDER_WIDTH, self.y + self.BORDER_WIDTH, self.width - self.BORDER_WIDTH * 2,
             self.height - self.BORDER_WIDTH * 2), 0)
+
+    def click(self, x, y):
+        """
+        if user clicked on button
+        :param x: float
+        :param y: float
+        :return: bool
+        """
