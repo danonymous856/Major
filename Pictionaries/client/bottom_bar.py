@@ -47,6 +47,15 @@ class BottomBar:
         handle all the button press events here
         :return: None
         """
+        mouse = pygame.mouse.get_pos()
+
+        if self.clear_button.click(*mouse):
+            self.game.board.clear()
+            self.game.connection.send({10:[]})
+
+        if self.eraser_button.click(*mouse):
+            self.game.draw_color = (255,255,255)
+
 
 
 
