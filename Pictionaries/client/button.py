@@ -10,3 +10,9 @@ class Button:
         self.y = y
         self.width = width
         self.height = height
+
+    def draw(self, win):
+        pygame.draw.rect(win, self.border_color, (self.x, self.y, self.width, self.height), 0)
+        pygame.draw.rect(win, self.color, (
+            self.x + self.BORDER_WIDTH, self.y + self.BORDER_WIDTH, self.width - self.BORDER_WIDTH * 2,
+            self.height - self.BORDER_WIDTH * 2), 0)
