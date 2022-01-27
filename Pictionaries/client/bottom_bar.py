@@ -59,9 +59,3 @@ class BottomBar:
         for btn in self.color_buttons:
             if btn.click(*mouse):
                 self.game.draw_color = btn.color
-
-
-
-
-
-
