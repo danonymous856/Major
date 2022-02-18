@@ -29,3 +29,9 @@ class Button:
             return True  # user clicked button
 
         return False
+
+class TextButton(Button):
+    def __init__(self,x,y,width,height,color,text,border_color = (0,0,0)):
+        super().__init__(x,y,width,height,color,border_color)
+        self.text = text
+        self.text_font = pygame.font.Sysfont("comicsans",30)

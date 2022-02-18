@@ -38,7 +38,7 @@ class BottomBar:
         pygame.draw.rect(win,(0,0,0),(self.x, self.y ,self.WIDTH, self.HEIGHT),self.BORDER_THICKNESS)
         self.clear_button.draw(win)
         self.eraser_button.draw(win)
-
+ā
         for btn in self.color_buttons:
             btn.draw(win)
 
